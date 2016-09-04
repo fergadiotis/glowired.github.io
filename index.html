@@ -65,7 +65,7 @@ layout: default
   <div class="col col-12">
     {% for port in site.data.portfolio %}
       <div class="col col-{{port.width}}">
-        <div class="block" style="background-image:url(assets/{{port.img}})">
+        <div class="block" style="background-image:url('{{site.github.url}}/assets/{{port.img}}')">
             <div class="block-body height-{{port.height}}">              
                 <h2 class="align-bottom-right">
                   {{ port.title }}
@@ -83,7 +83,7 @@ layout: default
                 <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
 
                 <h2>
-                  <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  <a class="post-link white-text" href="{{ post.url | prepend: site.github.url}}">{{ post.title }}</a>
                 </h2>
             </div>
         </div>
