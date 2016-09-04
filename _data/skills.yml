@@ -1,0 +1,28 @@
+-   id: javascript
+    descr: Apple  
+    xp: 6
+-   id: css
+    descr: Google
+    color: teal
+    xp: 7
+-   id: c#
+    descr: 250hookahs 
+    xp: 3
+-   id: Osx10
+    descr: Iphone 7
+    xp: 8
+-   id: java
+    descr: IOS 9   
+    xp: 5
+-   id: sass
+    descr: Uber    
+    xp: 4
+-   id: jquery
+    descr: Galaxy s7 edge   
+    xp: 3
+-   id: Safe Motos
+    descr: Sonny
+    xp: 2
+-   id: php
+    descr: Experia
+    xp: 4

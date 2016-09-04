@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>10 stunning hover effec</title>
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel='stylesheet prefetch' href='http://c-araujo.com/assets/fonts/starJedi/SE/style.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+      <div class="container-fluid">
+      <section class="head">
+    <a href="" data-bf="Welcome to " data-af="Geek up :)">THE  TECH WORLD</a>
+  </section>
+
+  
+    
+        <script src="js/index.js"></script>
+
+    
+    </div>d
+    
+  </body>
+</html>
+
+<div class="home">
+  
+  
+ <div class="col col-12">
+
+      <div class="col col-3">
+
+          <div class="block glass"  style="background-image:url(assets/avatar.jpg)">      
+          </div>
+      </div>
+
+      <div class="col col-9">
+        <div class="block glass">
+            <div class="block-body">
+                <h2>Yo, I'm Dude Labouwski</h2>
+                <p class="grey-text">Aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores ausLorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus</p>
+            </div>
+        </div>
+      </div>  
+  </div>
+  <div class="col col-6">
+  {% include deep-minified.html %}
+  </div>
+
+  <br>
+
+
+  <div class="col col-12">
+    {% for port in site.data.portfolio %}
+      <div class="col col-{{port.width}}">
+        <div class="block" style="background-image:url(assets/{{port.img}})">
+            <div class="block-body height-{{port.height}}">              
+                <h2 class="align-bottom-right">
+                  {{ port.title }}
+                </h2>
+            </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  <div class="col col-9">
+    {% for post in site.posts %}
+      <div class="col col-{{post.width}}">
+        <div class="block {{post.color}}">
+            <div class="block-body height-{{post.height}}">
+                <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                <h2>
+                  <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+            </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+    <div class="col col-3">
+        <div class="block glass">
+            <div class="block-body">
+                <h3 class="margin-bot">Monthly</h3>                
+                {% for skill in site.data.skills %}
+                <span class="post-meta white-text">{{skill.descr}}</span>
+                <div class="progress margin-bot"><div class="progress-{{skill.xp}}"></div></div>                
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

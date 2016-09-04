@@ -1,0 +1,68 @@
+---
+layout: page
+title: Reviews
+permalink: /Reviews
+---
+
+
+
+
+
+
+<div class="col col-12">
+<hr>
+
+<div class="col col-12">
+  <div class="col-sm-8 col-md-6">
+  <h1>samsung</h1>
+      
+        <iframe width="1000" height="600"
+src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0">
+</iframe>
+        
+  </div>
+
+<div class="col-sm-8 col-md-6">
+  <h1>iphone</h1>
+     
+        <iframe width="1000" height="600"
+src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0">
+</iframe>
+    
+  </div>
+
+<div class="col-sm-8 col-md-6">
+  <h1>nexus</h1>  
+        <iframe width="1000" height="600"
+src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0">
+</iframe>
+
+  </div>
+
+  <div class="col-sm-8 col-md-6">
+
+  <h1>ne ones</h1>
+  
+      
+        <iframe width="1000" height="600"
+src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0">
+</iframe>
+
+        
+  </div>
+  </div>
+  </div>
+
+
+
+
+</div>
+
+<ul>
+  {% for post in site.categories.Reviews. limit:4 %}
+  <li>
+  <a href="{{ post.url | prepend: site.github.url }}">{{post.title}}</a>
+  <p>{{post.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>
