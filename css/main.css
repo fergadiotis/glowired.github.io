@@ -130,6 +130,11 @@ pre {
       padding-right: 2px;
       padding-left: 2px; } }
 
+a:hover{
+  text-decoration:none !important;
+  color: #e7e7e7 !important;
+}
+
 /**
  * Clearfix
  */
